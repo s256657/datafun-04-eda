@@ -12,7 +12,7 @@ This repository holds a basic Jupyter project to learn and experiment. Follow th
 
 ---
 
-## Step one - Create and initialize project
+## Create and initialize project
     1. Create repository in GITHUB named datafun-04-eda
         a. Ensure you click to add readme.md
     2. Clone to local machine
@@ -45,4 +45,38 @@ This repository holds a basic Jupyter project to learn and experiment. Follow th
         b. Within the newly created notebook in the top right there will be a kernel button - click kernel button
         c. Selevt the interpreter associated with .venv
 
-------- To be continued
+## Create an initial title, header, and imports
+    For this step the title and header will be in a markdown cell where the imports will be coded
+    1. Within the wilcox_eda.ipynb notebook click the + Markdown button at the top of the window
+    2. Add title and header
+        Input:
+        **Craig Wilcox: Exploratory Data Analysis Project**
+        Purpose: Perform exploratory data analysis using tools in a Jupyter notebook
+        Author: Craig Wilcox
+        Date started: February 2 2025
+    3. I created another markdown window and added the import names we would be using listed out
+        This can be added to throughout the project
+        Input:
+        Imports required for this project
+        1. pandas
+        2. Iris Data set
+    4. Click + Code button at the top of the window to create a python cell
+    5. Insert code for import statements after inserting run the cell to check it runs properly and to import
+        Insert:
+        import pandas as pd
+        import seaborn as sns
+        import matplotlib
+        print("Starting out with Jupyter.")
+    6. Create another python cell to load data
+        Insert:
+        # Load the Iris dataset into pandas DataFrame
+        iris_df: pd.DataFrame = sns.load_dataset('iris')
+
+        # List column names
+        iris_df.columns
+
+        # Inspect first few rows of the DataFrame
+        iris_df.head()
+    7. At the top of the notebook window click Run All button and both python cell should run and populate a small graph
+
+------ To be Continued
