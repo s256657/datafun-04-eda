@@ -80,7 +80,7 @@ This repository holds a basic Jupyter project to learn and experiment. Follow th
     7. At the top of the notebook window click Run All button and both python cell should run and populate a small graph
 
 ## Initial Data Inspection
-Purpose is to take a look at the data to understand what we are working with and what in the future we can manipulate.
+    Purpose is to take a look at the data to understand what we are working with and what in the future we can manipulate.
     1. Add another code cell and input below
         Insert:
         # Specify the number of rows to display
@@ -132,7 +132,7 @@ Purpose is to take a look at the data to understand what we are working with and
         matplotlib.pyplot.show()
     6. Add markdown cell to document initial observations
 ## Data Transformation and Feature Engineering
-In this section there is an example of how you can change and manipulate the output of this data
+    In this section there is an example of how you can change and manipulate the output of this data
     1. Create another code cell and input the following code
         # Feature Engineering
         # Renaming a column
@@ -145,7 +145,7 @@ In this section there is an example of how you can change and manipulate the out
         # Show all plots
         matplotlib.pyplot.show()
 ## Visualizations
-This section will go through some exampls of visualization options
+    This section will go through some exampls of visualization options
     1. Create new code cell and input below. This creates a grid of sctter plots for analysis
         # Feature Engineering
         # Renaming a column
