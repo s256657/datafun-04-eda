@@ -79,4 +79,29 @@ This repository holds a basic Jupyter project to learn and experiment. Follow th
         iris_df.head()
     7. At the top of the notebook window click Run All button and both python cell should run and populate a small graph
 
------- To be Continued
+## Initial Data Inspection
+Purpose is to take a look at the data to understand what we are working with and what in the future we can manipulate.
+    1. Add another code cell and input below
+        Insert:
+        # Specify the number of rows to display
+        iris_df.head(10)
+
+        # Inspect the shape of the DataFrame with shape attribute
+        # The shape is a tuple with count of rows and columns in the DataFrame
+        iris_df.shape
+
+        # Inspect the data types of the columns with dtypes attribute
+        # The data types are returned as a pandas Series
+        iris_df.dtypes
+
+        # Inspect the data types of the columns with info() method
+        iris_df.info()
+    2. After running the results should display which will show 5 different columns or catagories with 150 data points in each of those columns
+
+## Initial Descriptive statistics
+    1. Add another code cell 
+        input:
+        # Inspect summary statistics for numerical columns
+        iris_df.describe()
+    2. After running the output should show count, mean, standard deviation, minimum, maximum, and quartiles
+    3. There should be no errors in this data set but when used it can identify possible data integrity issues beyond that standard statiscical analysis.
