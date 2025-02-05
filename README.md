@@ -177,3 +177,5 @@ This section will go through some exampls of visualization options
 
         matplotlib.pyplot.show()
     4. Create markdown cell to explain observations
+## Finalize project
+Added a final markdown cell to discuss finding based on all of the analysis point that were run.
