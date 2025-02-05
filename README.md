@@ -4,10 +4,10 @@ My first Jupyter project
 This repository holds a basic Jupyter project to learn and experiment. Follow the step by step instructions for what I did while creating and testing. This was created using macOS so all command or "Run:" prompts will be for macOS
 
 ## git add, commit, push
-Though not specifically listed when ran while creating and running this project commiting changes is required steps below
-    git add .
-    git commit -m "insert commit meesage here"
-    git push -u origin main
+    Though not specifically listed when ran while creating and running this project commiting changes is required steps below
+    1. git add .
+    2. git commit -m "insert commit meesage here"
+    3. git push -u origin main
         After initial push all other push commands are - git push
 
 ---
