@@ -131,3 +131,16 @@ Purpose is to take a look at the data to understand what we are working with and
         # Show all plots
         matplotlib.pyplot.show()
     6. Add markdown cell to document initial observations
+## Data Transformation and Feature Engineering
+ In this section there is an example of how you can change and manipulate the output of this data
+    1. Create another code cell and input the following code
+        # Feature Engineering
+        # Renaming a column
+        iris_df.rename(columns={'sepal_length': 'Sepal Length'}, inplace=True)
+        # Adding a new column
+        iris_df['Sepal Area'] = iris_df['Sepal Length'] * iris_df['sepal_width']
+    2. This code will not display results for this cell when run as there is no input so add earlier code and see the difference in the graphs displayed
+        # Inspect histograms for ALL numerical columns
+        iris_df.hist()
+        # Show all plots
+        matplotlib.pyplot.show()
