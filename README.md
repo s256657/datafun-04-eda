@@ -132,7 +132,7 @@ Purpose is to take a look at the data to understand what we are working with and
         matplotlib.pyplot.show()
     6. Add markdown cell to document initial observations
 ## Data Transformation and Feature Engineering
- In this section there is an example of how you can change and manipulate the output of this data
+In this section there is an example of how you can change and manipulate the output of this data
     1. Create another code cell and input the following code
         # Feature Engineering
         # Renaming a column
@@ -144,3 +144,36 @@ Purpose is to take a look at the data to understand what we are working with and
         iris_df.hist()
         # Show all plots
         matplotlib.pyplot.show()
+## Visualizations
+This section will go through some exampls of visualization options
+    1. Create new code cell and input below. This creates a grid of sctter plots for analysis
+        # Feature Engineering
+        # Renaming a column
+        iris_df.rename(columns={'sepal_length': 'Sepal Length'}, inplace=True)
+
+        # Adding a new column
+        iris_df['Sepal Area'] = iris_df['Sepal Length'] * iris_df['sepal_width']
+
+        # Create a pairplot of the Iris dataset
+        # A pairplot is a grid of scatter plots for each pair of numerical columns in the dataset
+        # The hue parameter is used to color the data points 
+        # by species (a categorical column)
+        sns.pairplot(iris_df, hue='species')
+
+        # Show all plots
+        matplotlib.pyplot.show()
+    2. Create markdown cell to explain observations
+    3. Create a new code cell and input code. this code adds another scatter plot based on specific parameters for more detail.
+        # A scatter plot is a plot of two numerical variables.
+        scatter_plt = sns.scatterplot(
+            data=iris_df, x="Sepal Length", y="Sepal Area", hue="species")
+
+        # Set axis labels using the Matplotlib Axes methods set_xlabel() and set_ylabel()
+        scatter_plt.set_xlabel("Sepal Length (mm)")
+        scatter_plt.set_ylabel("Sepal Area (mm squared)")   
+
+        # Set the title using the Matplotlib Axes set_title() method
+        scatter_plt.set_title("Chart 1. Iris Sepal Length vs. Sepal Area (by Species)")
+
+        matplotlib.pyplot.show()
+    4. Create markdown cell to explain observations
