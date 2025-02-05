@@ -105,3 +105,29 @@ Purpose is to take a look at the data to understand what we are working with and
         iris_df.describe()
     2. After running the output should show count, mean, standard deviation, minimum, maximum, and quartiles
     3. There should be no errors in this data set but when used it can identify possible data integrity issues beyond that standard statiscical analysis.
+## Initial Data Distribution for numerical and categorical columns
+    1. Add a code cell
+    2. For numerical columns input the following code to show histograms of all the columns
+        # Inspect histograms for ALL numerical columns
+        iris_df.hist()
+        # Show all plots
+        matplotlib.pyplot.show()
+    3. Not used at this time but if you had only one column you wish to display below is an example
+        # Inspect histogram by one numerical column
+        iris_df['sepal_length'].hist()
+    4. Add markdown cell to document observations
+    5. Add another code cell for the categorical columns. The code below will show counts and display a graph of the counts
+        # Inspect value counts by categorical column
+        # Column name must be EXACT.
+        # The value_counts() method is only available for Series objects.
+        # The value_counts() method returns a pandas Series with the counts of unique values in the column.
+        iris_df['species'].value_counts()
+        # Inspect value counts for ALL categorical columns
+        for col in iris_df.select_dtypes(include=['object', 'category']).columns:
+            # Display count plot
+            sns.countplot(x=col, data=iris_df)
+            matplotlib.pyplot.title(f'Distribution of {col}')
+            matplotlib.pyplot.show()
+        # Show all plots
+        matplotlib.pyplot.show()
+    6. Add markdown cell to document initial observations
